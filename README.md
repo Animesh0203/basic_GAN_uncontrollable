@@ -25,7 +25,7 @@ python main.py
 The training progress and generated images will be displayed in the console output.
 
 Dataset
-The CIFAR-100 dataset is used for training the GAN model. The dataset consists of 100 classes, with each class containing 600 images of size 32x32 pixels.
+The CIFAR-100 dataset is used for training the GAN model but you can load any other dataset as I have written some extra code which automatically matches the image dimension with the architecture. The dataset consists of 100 classes, with each class containing 600 images of size 32x32 pixels.
 
 Project Structure
 The project structure is organized as follows:
@@ -38,8 +38,6 @@ The project structure is organized as follows:
 
 During the training process, the GAN model generates images that gradually improve in quality, resembling the images from the CIFAR-100 dataset. The progress and generated images are displayed in the console output.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for more information.
 
 ### Acknowledgements:
 This implementation is based on the works of Goodfellow et al. (2014): Generative Adversarial Networks.
