@@ -7,8 +7,8 @@ def create_dataloader(bs):
         transforms.ToTensor()
     ])
 
-    dataset = CIFAR100('.', download=True, transform=transform)
+    dataset = datasets.CIFAR100(root=root, transform=transform, download=True)
     sample_image, _ = dataset[0]
-    image_channels,image_height,image_width = sample_image.shape
-    dataloader = DataLoader(dataset, batch_size=bs, shuffle=True)
-    return dataloader
+    image_channels, image_height, image_width = sample_image.shape
+
+    return dataset, image_channels, image_height, image_width
