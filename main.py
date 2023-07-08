@@ -22,7 +22,7 @@ bs = 128
 device = 'cuda'
 
 # Create dataloader
-dataloader = create_dataloader(bs)
+dataloader, image_channels, image_height, image_width = create_dataloader("dataset/")
 
 # Create generator and discriminator
 gen = Generator(z_dim)
